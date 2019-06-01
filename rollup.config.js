@@ -1,6 +1,7 @@
 import resolve from 'rollup-plugin-node-resolve';
 import commonjs from 'rollup-plugin-commonjs';
 import json from 'rollup-plugin-json';
+import babel from 'rollup-plugin-babel';
 import { terser } from "rollup-plugin-terser";
 import replace from 'rollup-plugin-replace';
 import pkg from './package.json';
@@ -20,6 +21,18 @@ export default [{
     json({
       preferConst: true,
       compact: true
+    }),
+    babel({
+      exclude: 'node_modules/**',
+      babelrc: false,
+      presets:[
+        ["@babel/preset-env", {
+          "targets": {
+            "ie": 8
+          },
+          "modules": false
+        }]
+      ]
     }),
     terser(),
     replace({

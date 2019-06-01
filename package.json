@@ -1,6 +1,6 @@
 {
   "name": "adele",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "A client side library for sending errors to your backend API.",
   "browser": "dist/adele.js",
   "repository": "https://github.com/tobias-g/adele",
@@ -15,15 +15,14 @@
   "devDependencies": {
     "@babel/core": "7.4.5",
     "@babel/preset-env": "7.4.5",
-    "axios": "0.18.0",
-    "rollup": "1.12.4",
+    "axios": "0.19.0",
+    "rollup": "1.13.1",
     "rollup-plugin-babel": "4.3.2",
     "rollup-plugin-commonjs": "10.0.0",
     "rollup-plugin-json": "4.0.0",
-    "rollup-plugin-node-resolve": "5.0.0",
+    "rollup-plugin-node-resolve": "5.0.1",
     "rollup-plugin-replace": "2.2.0",
-    "rollup-plugin-terser": "5.0.0",
-    "rollup-plugin-uglify": "6.0.2"
+    "rollup-plugin-terser": "5.0.0"
   },
   "files": [
     "dist"
