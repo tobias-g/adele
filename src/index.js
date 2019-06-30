@@ -22,12 +22,14 @@ export default (options) => {
    * @return {void}
    */
   window.onerror = (msg, source, line, col, err) => {
+    const stack = err && err.stack ? err.stack : null;
+
     axios.post(endpoint, {
       msg,
       source,
       line,
       col,
-      err
+      stack
     })
     .catch(err => console.error(err));
   };
