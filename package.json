@@ -1,6 +1,6 @@
 {
   "name": "adele",
-  "version": "0.0.6",
+  "version": "0.1.0",
   "description": "A client side library for sending errors to your backend API.",
   "browser": "dist/adele.js",
   "repository": "https://github.com/tobias-g/adele",
