@@ -8,9 +8,7 @@ import axios from 'axios';
  * @return {Object}         Object with additional functions to call on Adele
  */
 export default (options) => {
-  const { endpoint, accessKey } = options;
-
-  axios.defaults.headers.common['x-access-key'] = accessKey;
+  const { endpoint, headers } = options;
 
   /**
    * For all errors log them back to the server somewhere.

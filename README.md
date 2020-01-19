@@ -10,7 +10,6 @@ Instantiate `adele` and it will send a `POST` request of any unhandled exception
 
 ```
 adele({
-  endpoint: 'https://example.com/api/browser/logs',
-  accessKey: 'foobar'
+  endpoint: 'https://example.com/api/browser/logs'
 });
 ```
